@@ -1,0 +1,19 @@
+<section>
+    <form class="log_in mx-auto" id="loginForm" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <div class="mb-3 mt-5">
+            <h4 class="text-center">Login</h4>
+          <label for="exampleInputUsername" class="form-label">Username</label>
+          <input type="text" class="form-control" id="exampleInputUsername" aria-describedby="usernameHelp" onkeyup="validateUsername()" required>
+          <span id="username-error">Username is required</span> <br>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" onkeyup="validatePassword()" required>
+          <span id="password-error">Password is required</span> <br>
+        </div>
+        <button type="submit" class="btn btn-danger mt-4" onclick="return validateForm()">Login</button>
+        <div class="text-center mt-3">
+        <p class="fw-bold">Don't have an account? <a href="#view_6" class="sign_up">Sign up here!</a></p>
+    </div>
+      </form>
+</section>
